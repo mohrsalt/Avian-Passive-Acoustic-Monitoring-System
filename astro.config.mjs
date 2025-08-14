@@ -7,4 +7,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://mohrsalt.github.io',
+  base: '/Avian-Passive-Acoustic-Monitoring-System',
 });
