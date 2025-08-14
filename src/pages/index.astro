@@ -1,10 +1,10 @@
 ---
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
+import Introduction from "../components/Introduction.astro";
+import Hardware from "../components/Hardware.astro";
+import Algorithm from "../components/Algorithm.astro";
+import People from "../components/People.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
@@ -23,16 +23,16 @@ import "../styles/global.css";
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>{siteConfig.name} - {siteConfig.title}</title>
+    <title>{siteConfig.name}</title>
   </head>
   <body>
     <Header />
     <section>
       <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
+      <Introduction />
+      <Hardware />
+      <Algorithm />
+      <People />
     </section>
     <Footer />
   </body>
