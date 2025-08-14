@@ -1,9 +1,7 @@
 ---
 import { siteConfig } from "../config";
 
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
-const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+
 ---
 
 <header
@@ -14,44 +12,44 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
     <ul class="flex items-center gap-8 justify-center">
       <li>
         <a
-          href="#about"
+          href="#introduction"
           class="text-gray-700 hover:text-black transition-colors font-medium"
         >
-          About
+          Introduction
         </a>
       </li>
       {
-        hasProjects && (
+        (
           <li>
             <a
-              href="#projects"
+              href="#hardware"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Projects
+              Hardware
             </a>
           </li>
         )
       }
       {
-        hasExperience && (
+        (
           <li>
             <a
-              href="#experience"
+              href="#algorithm"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Experience
+              Algorithm
             </a>
           </li>
         )
       }
       {
-        hasEducation && (
+        (
           <li>
             <a
-              href="#education"
+              href="#people"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Education
+              People
             </a>
           </li>
         )
