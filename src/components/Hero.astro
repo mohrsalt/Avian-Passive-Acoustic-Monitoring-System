@@ -4,15 +4,25 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
+  class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
   style={`
     --accent-color: ${siteConfig.accentColor};
     background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
   `}
 >
-
+  <!-- Gradient overlay -->
+  <div
+    class="absolute inset-0"
+    style={`background: radial-gradient(
+      ellipse 800px 1200px at 0% 0%,
+      ${siteConfig.accentColor}40 0%,
+      ${siteConfig.accentColor}25 20%,
+      ${siteConfig.accentColor}10 40%,
+      rgba(255, 255, 255, 0.3) 70%,
+      rgba(255, 255, 255, 0.8) 90%,
+      white 100%
+    )`}
+  ></div>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
     <div>
 
