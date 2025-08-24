@@ -13,9 +13,8 @@ import bg from '../components/background.png'
     class="absolute inset-0"
 
   ></div>
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center"   style={{
-    "--accent-color": siteConfig.accentColor,
-    backgroundImage: "url('./background.png')",
+  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center"   
+style={`--accent-color: ${siteConfig.accentColor}; background-image: url(${bg});`}
   }}>
     <div>
 
