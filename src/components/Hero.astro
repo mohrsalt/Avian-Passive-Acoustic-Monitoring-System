@@ -5,10 +5,10 @@ import { siteConfig } from "../config";
 <div
   id="hero"
   class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
-  style={`
-    --accent-color: ${siteConfig.accentColor};
-    background-image: url('background.png');
-  `}
+  style={{
+    "--accent-color": siteConfig.accentColor,
+    backgroundImage: "url('/background.png')",
+  }}
 >
   <!-- Gradient overlay -->
   <div
