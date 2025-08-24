@@ -9,7 +9,7 @@ const optimizedImage = await getImage({ src: bg });
 <div
   id="hero"
   class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
-style={`background-image: url(${optimizedImage.src});`}
+style={`--accent-color: ${siteConfig.accentColor}; background-image: url(${optimized.src});`}
 >
   <!-- Gradient overlay -->
   <div
