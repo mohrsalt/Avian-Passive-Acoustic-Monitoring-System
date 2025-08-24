@@ -9,7 +9,7 @@ const optimizedImage = await getImage({ src: bg });
 <div
   id="hero"
   class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
-
+style={`background-image: url(${optimizedImage.src});`}
 >
   <!-- Gradient overlay -->
   <div
@@ -17,7 +17,7 @@ const optimizedImage = await getImage({ src: bg });
 
   ></div>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center"   
-style={`background-image: url(${optimizedImage.src});`}
+
   >
     <div>
 
