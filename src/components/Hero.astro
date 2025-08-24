@@ -1,15 +1,15 @@
 ---
 import { siteConfig } from "../config";
-
+import bg from '../components/background.png'; // Adjust path to your image
 ---
 
-import bg from '../components/background.png'; // Adjust path to your image
+
 
 
 <div
   id="hero"
   class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
-style={`background-image: ../components/background.png`}
+style={`background-image: url(${bg})`}
 >
   <!-- Gradient overlay -->
   <div
