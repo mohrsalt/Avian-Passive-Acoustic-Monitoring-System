@@ -5,7 +5,7 @@ import { siteConfig } from "../config";
 import { getImage } from 'astro:assets';
 import bg from '../components/background.png'; // Adjust path to your image
 
-const optimizedImage = await getImage({ src: bg });
+const optimizedImage = await getImage({{ src: bg }});
 <div
   id="hero"
   class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
