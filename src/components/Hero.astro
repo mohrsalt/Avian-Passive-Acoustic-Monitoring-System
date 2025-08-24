@@ -8,8 +8,8 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
-style={`background-image: url("../components/background.png")`}
+  class="hero-bg relative isolate overflow-hidden py-24 md:h-screen bg-cover bg-center"
+
 >
   <!-- Gradient overlay -->
   <div
@@ -40,6 +40,9 @@ style={`background-image: url("../components/background.png")`}
 </div>
 
 <style>
+  .hero-bg {
+    background-image: url('../components/background.png');
+  }
   @keyframes fadeIn {
     from {
       opacity: 0;
